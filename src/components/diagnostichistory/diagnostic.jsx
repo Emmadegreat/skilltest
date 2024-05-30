@@ -103,7 +103,7 @@ const JessicaDiagnosis = () => {
 
 
     return (
-        <div className='bg-[#f4f0fe] rounded-2xl'>
+        <div className='bg-[#f4f0fe] rounded-2xl w-full'>
             <Line data={ Data} options={Options} />
         </div>
     )

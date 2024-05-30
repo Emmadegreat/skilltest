@@ -42,8 +42,8 @@ const Home = () => {
         <main className='pt-[6rem]'>
             <div className='main-section flex justify-between mx-[1.5rem]'>
 
-                <div className='first-part flex flex-col p-4 rounded-xl bg-[#fff] basis-[24%]' >
-                    <h1 className='mb-4 font-[600]'>Patients</h1>
+                <div className='first-part flex flex-col p-4 rounded-xl bg-[#fff] basis-[20%]' >
+                    <h1 className='mb-4 capitalize text-[1.1rem] font-semibold'>Patients</h1>
                     {
                         users.map((item, index) => {
 
@@ -62,13 +62,13 @@ const Home = () => {
                     }
                 </div>
 
-                <div className='second-part basis-[76%]'>
+                <div className='second-part basis-[80%]'>
 
                 {jessicainfo && (
                     <div className='flex justify-between p-0'>
-                        <div className='basis-[72%] rounded p-4'>
+                        <div className='basis-[80%] rounded p-4'>
                             <div className='diagnostic-history bg-[#fff] mt-[-1rem] rounded-xl p-4'>
-                                    <h2 className='capitalize'>diagnostic-history</h2>
+                                    <h2 className='mb-6 capitalize text-[1.1rem] font-semibold'>diagnosis history</h2>
                                     <JessicaDiagnosis/>
                                 {/*jessicainfo.diagnosis_history.map((history, index) => (
                                     <div key={index} className='mb-4'>
@@ -84,7 +84,7 @@ const Home = () => {
                             </div>
 
                             <div className='diagnostic-list mt-6 rounded-xl p-4 bg-[#fff]'>
-                                    <h2 className='capitalize font-[600] pb-4'>diagnostic list</h2>
+                                    <h2 className='capitalize text-[1.1rem] font-semibold pb-4'>diagnostic list</h2>
 
                                         <div className='px-4 mb-4 flex justify-between py-1 bg-[#fafafa] rounded-2xl'>
                                             <strong className='text-[13px]'>Problem/Diagnosis</strong>
@@ -112,11 +112,11 @@ const Home = () => {
                             </div>
                         </div>
 
-                        <div className='third-part basis-[30%] flex flex-col rounded-xl'>
+                        <div className='third-part basis-[28%] flex flex-col rounded-xl'>
                             <div className='jessica flex flex-col mb-8 p-4 bg-[#fff] rounded'>
                                 <div className='flex flex-col items-center'>
                                     <img src={jessicainfo.profile_picture} alt="" className='mb-2 w-[100px] h-[100px]' />
-                                    <b>{jessicainfo.name}</b>
+                                    <b className='capitalize text-[1.1rem] font-semibold'>{jessicainfo.name}</b>
                                 </div>
                                 <div className='flex flex-col items-start mt-4 mb-[-0.5rem]'>
                                     <p className='text-[10px]'>Date of Birth</p>
@@ -145,7 +145,7 @@ const Home = () => {
                             </div>
 
                             <div className='Lab-result flex flex-col rounded-xl p-4 bg-[#fff]'>
-                                <h2 className='mb-4 font-[600] capitalize'>lab results</h2>
+                                <h2 className='mb-4 capitalize text-[1.1rem] font-semibold'>lab results</h2>
                                 {jessicainfo.lab_results.map((list, index) => (
                                     <div className='flex flex-col py-2 items-start' key={index}>
                                         <p>{list}</p>
