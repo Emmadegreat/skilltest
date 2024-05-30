@@ -104,7 +104,11 @@ const JessicaDiagnosis = () => {
 
     return (
         <div className='bg-[#f4f0fe] rounded-2xl w-full'>
-            <Line data={ Data} options={Options} />
+            <Line
+                data={Data}
+                options={Options}
+                style={{height: '100%', width: '100%'}}
+            />
         </div>
     )
 }
