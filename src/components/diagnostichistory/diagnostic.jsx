@@ -64,16 +64,16 @@ const JessicaDiagnosis = () => {
                 label: 'Systolic',
                 data: Systolic,
                 fill: false,
-                backgroundColor: 'gray',
-                borderColor: 'green',
+                backgroundColor: '#e66fd2',
+                borderColor: '#e66fd2',
             },
 
             {
                 label: 'Diastolic',
                 data: Diastolic,
                 fill: false,
-                backgroundColor: 'yellow',
-                borderColor: 'blue',
+                backgroundColor: '#8c6fe6',
+                borderColor: '#8c6fe6',
             }
 
         ]
@@ -93,7 +93,7 @@ const JessicaDiagnosis = () => {
         scales: {
             y: {
                 min: 60,
-                max: 180,
+                max: 160,
                 ticks: {
                     stepSize: 20
                 }
@@ -103,7 +103,7 @@ const JessicaDiagnosis = () => {
 
 
     return (
-        <div>
+        <div className='bg-[#f4f0fe] rounded-2xl'>
             <Line data={ Data} options={Options} />
         </div>
     )
