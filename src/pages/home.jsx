@@ -68,7 +68,7 @@ const Home = () => {
                         <div className='basis-[72%] rounded p-4'>
                             <div className='diagnostic-history bg-[#fff] mt-[-1rem] rounded-xl p-4'>
                                 <h2 className='capitalize'>diagnostic-history</h2>
-                                {jessicainfo.diagnosis_history.map((history, index) => (
+                                {/*jessicainfo.diagnosis_history.map((history, index) => (
                                     <div key={index} className='mb-4'>
                                         <p><strong>Month:</strong> {history.month}</p>
                                         <p><strong>Year:</strong> {history.year}</p>
@@ -78,29 +78,29 @@ const Home = () => {
                                         <p><strong>Respiratory Rate:</strong> {history.respiratory_rate.value} ({history.respiratory_rate.levels})</p>
                                         <p><strong>Temperature:</strong> {history.temperature.value} ({history.temperature.levels})</p>
                                     </div>
-                                ))}
+                                ))*/}
                             </div>
 
                             <div className='diagnostic-list mt-6 rounded-xl p-4 bg-[#fff]'>
-                                    <h2 className='capitalize font-[600]'>diagnostic list</h2>
+                                    <h2 className='capitalize font-[600] pb-4'>diagnostic list</h2>
 
-                                        <div className='flex justify-around'>
+                                        <div className='px-4 mb-4 flex justify-between py-1 bg-[#fafafa] rounded-2xl'>
                                             <strong className='text-[13px]'>Problem/Diagnosis</strong>
                                             <strong className='text-[13px]'>Description</strong>
-                                            <strong className='text-[12px]'>status</strong>
+                                            <strong className='text-[12px] mr-16'>status</strong>
                                         </div>
 
                                 {jessicainfo.diagnostic_list.map((item, index) => (
-                                    <div className='flex mb-4 justify-between' key={index}>
+                                    <div className='flex mb-4 justify-around' key={index}>
                                         <div className='basis-[31%] flex flex-col items-start'>
 
                                             <p className='text-[12px]'>{item.name}</p>
                                         </div>
-                                        <div className='basis-[31%] flex flex-col items-start'>
+                                        <div className='basis-[31%] flex flex-col '>
 
                                             <p className='text-[12px]'>{ item.description}</p>
                                         </div>
-                                        <div className='basis-[31%] flex flex-col items-start'>
+                                        <div className='pl-14 basis-[31%] flex flex-col justify-center'>
 
                                             <p className='text-[12px]'>{ item.status}</p>
                                         </div>
