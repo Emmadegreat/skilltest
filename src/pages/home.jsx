@@ -83,6 +83,29 @@ const Home = () => {
                                 ))*/}
                             </div>
 
+                            <div className='flex justify-between py-4 bg-[#fff] px-4'>
+                                <div className='p-2 rounded-2xl flex flex-col items-start bg-[#e0f3fa]  basis-[30%]'>
+                                    <img src="" alt="" />
+                                    <p>Respiratory Rate</p>
+                                    <p className='capitalize text-[1rem] font-semibold pb-4'>20 bpm</p>
+
+                                    <small pt-6>Normal</small>
+                                </div>
+                                <div className='p-2 rounded-2xl flex flex-col items-start bg-[#ffe6e9] basis-[30%]'>
+                                    <img src="" alt="" />
+                                    <p>Temperature</p>
+                                    <p className='capitalize text-[1rem] font-semibold pb-4' >98.6 F</p>
+                                    <small pt-6>Normal</small>
+                                </div>
+                                <div className='p-2 rounded-2xl flex flex-col items-start bg-[#ffe6f1] '>
+                                    <img src="" alt="" />
+                                    <p>Temperature</p>
+                                    <p  className='capitalize text-[1rem] font-semibold pb-4'>78 bpm</p>
+                                    <small pt-6>Lower than Average</small>
+                                </div>
+
+                            </div>
+
                             <div className='diagnostic-list mt-6 rounded-xl p-4 bg-[#fff]'>
                                     <h2 className='capitalize text-[1.1rem] font-semibold pb-4'>diagnostic list</h2>
 

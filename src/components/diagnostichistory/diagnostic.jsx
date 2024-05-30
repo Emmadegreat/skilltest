@@ -107,7 +107,7 @@ const JessicaDiagnosis = () => {
             <Line
                 data={Data}
                 options={Options}
-                style={{height: '100%', width: '100%'}}
+                style={{height: '600px', width: '100%'}}
             />
         </div>
     )
