@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react'
 
+import JessicaDiagnosis from '../components/diagnostichistory/diagnostic';
 import axios from 'axios'
 
 const Home = () => {
@@ -67,7 +68,8 @@ const Home = () => {
                     <div className='flex justify-between p-0'>
                         <div className='basis-[72%] rounded p-4'>
                             <div className='diagnostic-history bg-[#fff] mt-[-1rem] rounded-xl p-4'>
-                                <h2 className='capitalize'>diagnostic-history</h2>
+                                    <h2 className='capitalize'>diagnostic-history</h2>
+                                    <JessicaDiagnosis/>
                                 {/*jessicainfo.diagnosis_history.map((history, index) => (
                                     <div key={index} className='mb-4'>
                                         <p><strong>Month:</strong> {history.month}</p>
