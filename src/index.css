@@ -36,9 +36,10 @@ body{
   align-items: center;
   justify-content: space-between;
   font-size: 0.9rem;
-  margin: 0rem 1rem;
+  margin: 0rem 1.5rem;
   cursor: pointer;
 }
+
 ul li a{
   margin-left: 0.3rem;
 }
@@ -46,6 +47,15 @@ ul li a{
 ul li svg{
   width: 13px;
   height: 13px;
+}
+
+.diagnostic-history{
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
+}
+.temperature-rate{
+  border-bottom-right-radius: 12px;
+  border-bottom-left-radius: 12px;
 }
 
 .first-part{

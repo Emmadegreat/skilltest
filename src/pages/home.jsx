@@ -67,40 +67,38 @@ const Home = () => {
                 {jessicainfo && (
                     <div className='flex justify-between p-0'>
                         <div className='basis-[80%] rounded p-4'>
-                            <div className='diagnostic-history bg-[#fff] mt-[-1rem] rounded-xl p-4'>
-                                    <h2 className='mb-6 capitalize text-[1.1rem] font-semibold'>diagnosis history</h2>
-                                    <JessicaDiagnosis/>
-                                {/*jessicainfo.diagnosis_history.map((history, index) => (
-                                    <div key={index} className='mb-4'>
-                                        <p><strong>Month:</strong> {history.month}</p>
-                                        <p><strong>Year:</strong> {history.year}</p>
-                                        <p><strong>Systolic Blood Pressure:</strong> {history.blood_pressure.systolic.value} ({history.blood_pressure.systolic.levels})</p>
-                                        <p><strong>Diastolic Blood Pressure:</strong> {history.blood_pressure.diastolic.value} ({history.blood_pressure.diastolic.levels})</p>
-                                        <p><strong>Heart Rate:</strong> {history.heart_rate.value} ({history.heart_rate.levels})</p>
-                                        <p><strong>Respiratory Rate:</strong> {history.respiratory_rate.value} ({history.respiratory_rate.levels})</p>
-                                        <p><strong>Temperature:</strong> {history.temperature.value} ({history.temperature.levels})</p>
-                                    </div>
-                                ))*/}
+                            <div className='diagnostic-history bg-[#fff] mt-[-1rem] p-4'>
+                                <h2 className='mb-6 capitalize text-[1.1rem] font-semibold'>diagnosis history</h2>
+                                <JessicaDiagnosis/>
                             </div>
 
-                            <div className='flex justify-between py-4 bg-[#fff] px-4'>
-                                <div className='p-2 rounded-2xl flex flex-col items-start bg-[#e0f3fa]  basis-[30%]'>
-                                    <img src="" alt="" />
-                                    <p>Respiratory Rate</p>
-                                    <p className='capitalize text-[1rem] font-semibold pb-4'>20 bpm</p>
+                            <div className='flex justify-between py-4 bg-[#fff] px-4 temperature-rate'>
+                                <div className='px-3 py-2 rounded-2xl flex flex-col items-start bg-[#e0f3fa]  basis-[31%]'>
+                                    <img src="https://res.cloudinary.com/dbnxbly1r/image/upload/v1717134135/techcare/respiratory_rate_ewkrwr.svg"
+                                        alt="Respiratory Rate"
+                                        className='w-[80px] h-[80px]'
+                                    />
+                                    <p className='text-[14px]'>Respiratory Rate</p>
+                                    <p className='capitalize text-[14px] font-semibold pb-4'>20 bpm</p>
 
                                     <small pt-6>Normal</small>
                                 </div>
-                                <div className='p-2 rounded-2xl flex flex-col items-start bg-[#ffe6e9] basis-[30%]'>
-                                    <img src="" alt="" />
-                                    <p>Temperature</p>
-                                    <p className='capitalize text-[1rem] font-semibold pb-4' >98.6 F</p>
+                                <div className='px-3 py-2 rounded-2xl flex flex-col items-start bg-[#ffe6e9] basis-[31%]'>
+                                    <img src="https://res.cloudinary.com/dbnxbly1r/image/upload/v1717134136/techcare/temperature_x1djob.svg"
+                                        alt="Temperarture"
+                                        className='w-[80px] h-[80px]'
+                                    />
+                                    <p className='text-[14px]'>Temperature</p>
+                                    <p className='capitalize text-[14px] font-semibold pb-4' >98.6 F</p>
                                     <small pt-6>Normal</small>
                                 </div>
-                                <div className='p-2 rounded-2xl flex flex-col items-start bg-[#ffe6f1] '>
-                                    <img src="" alt="" />
-                                    <p>Temperature</p>
-                                    <p  className='capitalize text-[1rem] font-semibold pb-4'>78 bpm</p>
+                                <div className='px-3 py-2 rounded-2xl flex flex-col items-start bg-[#ffe6f1] basis-[31%]'>
+                                    <img src="https://res.cloudinary.com/dbnxbly1r/image/upload/v1717134136/techcare/HeartBPM_ovv7e5.svg"
+                                        alt="Heart Rate"
+                                        className='w-[80px] h-[80px]'
+                                    />
+                                    <p className='text-[14px]'>Heart Rate</p>
+                                    <p  className='capitalize text-[14px] font-semibold pb-4'>78 bpm</p>
                                     <small pt-6>Lower than Average</small>
                                 </div>
 
@@ -171,7 +169,7 @@ const Home = () => {
                                 <h2 className='mb-4 capitalize text-[1.1rem] font-semibold'>lab results</h2>
                                 {jessicainfo.lab_results.map((list, index) => (
                                     <div className='flex flex-col py-2 items-start' key={index}>
-                                        <p>{list}</p>
+                                        <p className='text-[14px]'>{list}</p>
                                     </div>
                                 ))}
                             </div>
