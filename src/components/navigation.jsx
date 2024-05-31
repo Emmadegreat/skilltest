@@ -6,7 +6,7 @@ const Navigation = () => {
         <nav className='navbar'>
             <div className='logo'>
                 <img src="https://res.cloudinary.com/dbnxbly1r/image/upload/v1716996183/techcare/TestLogo_geo9zj.svg" alt=""
-                    className='w-[100px] h-[60px]'
+                    className='w-[100px] h-[70px]'
                 />
             </div>
 

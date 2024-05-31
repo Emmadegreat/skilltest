@@ -40,9 +40,9 @@ const Home = () => {
 
     return (
         <main className='pt-[6rem]'>
-            <div className='main-section flex justify-between mx-[1.5rem]'>
+            <div className='main-section flex flex-col mx-[1.5rem] md:flex-row md:justify-between'>
 
-                <div className='first-part flex flex-col p-4 rounded-xl bg-[#fff] basis-[20%]' >
+                <div className='first-part flex flex-col p-4 rounded-xl bg-[#fff] basis-[20%] mb-6' >
                     <h1 className='mb-4 capitalize text-[1.1rem] font-semibold'>Patients</h1>
                     {
                         users.map((item, index) => {
@@ -62,11 +62,11 @@ const Home = () => {
                     }
                 </div>
 
-                <div className='second-part basis-[80%]'>
+                <div className='second-part basis-[80%] '>
 
                 {jessicainfo && (
-                    <div className='flex justify-between p-0'>
-                        <div className='basis-[80%] rounded p-4'>
+                    <div className='flex flex-col  md:flex-row p-0'>
+                        <div className='basis-[80%] rounded-xl p-4'>
                             <div className='diagnostic-history bg-[#fff] mt-[-1rem] p-4'>
                                 <h2 className='mb-6 capitalize text-[1.1rem] font-semibold'>diagnosis history</h2>
                                 <JessicaDiagnosis/>
@@ -104,7 +104,7 @@ const Home = () => {
 
                             </div>
 
-                            <div className='diagnostic-list mt-6 rounded-xl p-4 bg-[#fff]'>
+                            <div className='diagnostic-list mt-6 rounded-xl p-4 bg-[#fff] mx-2 md:mx-0'>
                                     <h2 className='capitalize text-[1.1rem] font-semibold pb-4'>diagnostic list</h2>
 
                                         <div className='px-4 mb-4 flex justify-between py-1 bg-[#fafafa] rounded-2xl'>
@@ -134,7 +134,7 @@ const Home = () => {
                         </div>
 
                         <div className='third-part basis-[28%] flex flex-col rounded-xl'>
-                            <div className='jessica flex flex-col mb-8 p-4 bg-[#fff] rounded'>
+                            <div className='jessica flex flex-col mb-8 p-4 bg-[#fff] rounded-xl'>
                                 <div className='flex flex-col items-center'>
                                     <img src={jessicainfo.profile_picture} alt="" className='mb-2 w-[100px] h-[100px]' />
                                     <b className='capitalize text-[1.1rem] font-semibold'>{jessicainfo.name}</b>
