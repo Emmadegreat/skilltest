@@ -72,7 +72,7 @@ const Home = () => {
                                 <JessicaDiagnosis/>
                             </div>
 
-                            <div className='flex justify-between py-4 bg-[#fff] px-4 temperature-rate'>
+                            <div className='flex flex-col md:flex-row md:justify-between py-4 bg-[#fff] px-4 temperature-rate'>
                                 <div className='px-3 py-2 rounded-2xl flex flex-col items-start bg-[#e0f3fa]  basis-[31%]'>
                                     <img src="https://res.cloudinary.com/dbnxbly1r/image/upload/v1717134135/techcare/respiratory_rate_ewkrwr.svg"
                                         alt="Respiratory Rate"
@@ -83,7 +83,7 @@ const Home = () => {
 
                                     <small pt-6>Normal</small>
                                 </div>
-                                <div className='px-3 py-2 rounded-2xl flex flex-col items-start bg-[#ffe6e9] basis-[31%]'>
+                                <div className='my-6 md:my-0 px-3 py-2 rounded-2xl flex flex-col items-start bg-[#ffe6e9] basis-[31%]'>
                                     <img src="https://res.cloudinary.com/dbnxbly1r/image/upload/v1717134136/techcare/temperature_x1djob.svg"
                                         alt="Temperarture"
                                         className='w-[80px] h-[80px]'
